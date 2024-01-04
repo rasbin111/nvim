@@ -7,6 +7,10 @@ vim.api.nvim_set_option('shiftwidth', 4) -- number of spaces to use for (auto) i
 vim.api.nvim_set_option('expandtab', true) -- use spaces instead of tabs
 
 
+
+-- colorscheme
+vim.cmd("colorscheme tokyonight")
+
 -- tab width to 2 spaces for js files 
 vim.api.nvim_exec([[
   augroup JavaScriptTabSize
