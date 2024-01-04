@@ -56,7 +56,16 @@ return require('packer').startup(function(use)
     -- theme
     use "folke/tokyonight.nvim"
 
+    -- treesitter configuration
+    use({
+      "nvim-treesitter/nvim-treesitter",
+      run = function()
+        local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+        ts_update()
+      end,
+    })
+
     if PACKER_BOOTSTRAP then
-	require("packer").sync()
+	    require("packer").sync()
     end
 end)
