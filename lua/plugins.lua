@@ -65,6 +65,9 @@ return require('packer').startup(function(use)
       end,
     })
 
+    -- comment
+    use {'numToStr/Comment.nvim'}
+
     if PACKER_BOOTSTRAP then
 	    require("packer").sync()
     end
