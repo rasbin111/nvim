@@ -7,3 +7,5 @@ vim.opt.mouse = "a" -- Enable mouse support in all modes
 vim.opt.ignorecase = true --Ignore case in searches 
 
 
+vim.cmd.colorscheme("nordic")
+
