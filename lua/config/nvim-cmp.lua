@@ -2,6 +2,7 @@ local cmp = require("cmp")
 cmp.setup({
     sources = {
         {name = "buffer"},
+        {name = "nvim_lsp"},
     }, 
     mapping = cmp.mapping.preset.insert({
         ['<Tab>'] = function(fallback)
@@ -15,4 +16,3 @@ cmp.setup({
         ['<CR>'] = cmp.mapping.confirm({select = true}),
     })
 })
-
