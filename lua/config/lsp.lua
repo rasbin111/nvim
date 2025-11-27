@@ -3,4 +3,6 @@ vim.lsp.config("luals", {
     filetypes = {'lua'},
 })
 
-vim.lsp.enable({'gopls', 'pyright', 'luals'})
+vim.lsp.enable({
+
+})
