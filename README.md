@@ -29,3 +29,6 @@ leader fh - find help
 :w - write 
 :q - quit 
 
+
+# neo-tree
+leader e - toggle neo-tree (file manager)

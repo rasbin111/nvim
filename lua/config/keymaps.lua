@@ -13,3 +13,5 @@ vim.keymap.set("n", "gl", function ()
     vim.diagnostic.open_float(nil, {border = "rounded", focus = true})
 end)
 
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<cr>") 
+
