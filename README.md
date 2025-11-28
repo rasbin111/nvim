@@ -32,3 +32,7 @@ leader fh - find help
 
 # neo-tree
 leader e - toggle neo-tree (file manager)
+
+# terminal 
+esc - exit from terminal mode to normal mode
+leader tt - toggle terminal 
