@@ -38,3 +38,10 @@ esc esc (double esc) - exit from terminal mode to normal mode
 leader tt - toggle terminal 
 leader tf - toggle terminal float
 leader lg - toggle lazy git 
+
+
+# Dependencies - things to install
+- lazygit 
+
+
+
