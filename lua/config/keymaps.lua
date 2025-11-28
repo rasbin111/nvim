@@ -13,9 +13,11 @@ vim.keymap.set("n", "gl", function ()
     vim.diagnostic.open_float(nil, {border = "rounded", focus = true})
 end)
 
-vim.keymap.set("n", "<leader>e", ":Neotree toggle<cr>") 
+vim.keymap.set("n", "<leader>e", ":Neotree toggle<cr>")
 
-vim.keymap.set("t", "<esc>", "<c-\\><c-n>") 
-vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>") 
+-- ToggleTerm
+vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
+vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>")
+vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float<cr>")
 
 
