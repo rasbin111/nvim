@@ -17,7 +17,7 @@ vim.keymap.set("n", "<leader>e", ":Neotree toggle<cr>")
 
 -- ToggleTerm
 vim.keymap.set("t", "<esc><esc>", "<c-\\><c-n>")
-vim.keymap.set("n", "<leader>tt", ":ToggleTerm<cr>")
+vim.keymap.set("n", "<leader>th", ":ToggleTerm<cr>")
 vim.keymap.set("n", "<leader>tf", ":ToggleTerm direction=float<cr>")
 
 
