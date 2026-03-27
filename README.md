@@ -40,8 +40,5 @@ leader tf - toggle terminal float
 leader lg - toggle lazy git 
 
 
-# Dependencies - things to install
-- lazygit 
-
 
 
