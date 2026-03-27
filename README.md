@@ -39,6 +39,6 @@ leader tt - toggle terminal
 leader tf - toggle terminal float
 leader lg - toggle lazy git 
 
-
-
+# lazygit
+leader lg - open lazygit ui
 
