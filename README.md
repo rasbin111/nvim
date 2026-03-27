@@ -42,3 +42,7 @@ leader lg - toggle lazy git
 # lazygit
 leader lg - open lazygit ui
 
+# fold 
+zR - open all folds
+zM - close all open folds
+za - toggles the fold at the cursor
