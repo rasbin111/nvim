@@ -46,3 +46,8 @@ leader lg - open lazygit ui
 zR - open all folds
 zM - close all open folds
 za - toggles the fold at the cursor
+
+# multiple word select 
+Ctrl + n - select next word
+Ctrl+Down / Ctrl+Up - add cursor on line below/above
+\\A - select all occurrences 
