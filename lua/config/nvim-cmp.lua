@@ -3,7 +3,11 @@ cmp.setup({
     sources = {
         {name = "buffer"},
         {name = "nvim_lsp"},
+        {name = "minuet"},
     }, 
+    perforamce = {
+        fetching_timeout = 2000, 
+    },
     mapping = cmp.mapping.preset.insert({
         ['<Tab>'] = function(fallback)
             if cmp.visible() then 
