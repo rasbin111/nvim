@@ -1,27 +1,45 @@
 require('minuet').setup {
+    provider = 'gemini',
+    notify = "debug",
+    n_completions = 1,
+    context_window = 512,
+    debounce = 600,
+    throttle = 1500,
+
     virtualtext = {
         auto_trigger_ft = {},
         keymap = {
-            -- accept whole completion
             accept = '<A-A>',
-            -- accept one line
             accept_line = '<A-a>',
-            -- accept n lines (prompts for number)
-            -- e.g. "A-z 2 CR" will accept 2 lines
             accept_n_lines = '<A-z>',
-            -- Cycle to prev completion item, or manually invoke completion
             prev = '<A-[>',
-            -- Cycle to next completion item, or manually invoke completion
             next = '<A-]>',
             dismiss = '<A-e>',
         },
     },
+
     lsp = {
-        enabled_ft = { 'toml', 'lua', 'cpp', 'java', 'typescript', },
-        completion = { enable = false },
-        inline_completion = {
-            enable = true,
-            enabled_auto_trigger_ft = { 'cpp', 'lua', 'java', 'typescript' },
+        enabled_ft = {}, -- off, since you're using nvim-cmp
+    },
+
+    provider_options = {
+        openai_compatible = {
+            api_key = 'TERM',
+            name = 'LMStudio',
+            end_point = 'http://localhost:1234/v1/chat/completions',
+            model = 'qwen/qwen2.5-coder-14b',
+            stream = true,
+            optional = { max_tokens = 264, top_p = 0.9 },
+        },
+        gemini = {
+            model = 'gemini-2.5-flash',
+            api_key = 'GEMINI_API_KEY',
+            end_point = 'https://generativelanguage.googleapis.com/v1beta/models',
+            optional = {
+                generationConfig = {
+                    thinkingConfig = { thinkingBudget = 0 },
+                },
+            },
         },
     },
 }
