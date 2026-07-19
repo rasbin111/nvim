@@ -2,7 +2,7 @@ return {
     'milanglacier/minuet-ai.nvim',
     config = function()
         require('minuet').setup {
-            provider = 'openai_compatible',
+            provider = 'gemini',
             n_completions = 1,    -- save resources for local models
             context_window = 512, -- start small, increase once you know your GPU can handle more
             debounce = 600,
@@ -19,6 +19,21 @@ return {
                         top_p = 0.9,
                     },
                 },
+                gemini = {
+                    model = 'gemini-2.5-flash',
+                    -- export GEMINI_API_KEY="AIza...your-actual-key-here" on ~/.bashrc or ~/.zshrc
+                    api_key = 'GEMINI_API_KEY',
+                    end_point = 'https://generativelanguage.googleapis.com/v1beta/models',
+                    optional = {
+                        generationConfig = {
+                            thinkingConfig = {
+                                -- Disable thinking is recommended
+                                thinkingBudget = 0,
+                            },
+                        },
+                    },
+                },
+
             },
         }
     end,
