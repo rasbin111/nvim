@@ -3,4 +3,9 @@ require("neo-tree").setup({
         winbar = true,
         statusline = false,
     },
+    filesystem = {
+        follow_current_file = {
+            enabled = true,
+        }
+    }
 })
