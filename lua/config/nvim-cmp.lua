@@ -3,7 +3,7 @@ cmp.setup({
     sources = {
         { name = "buffer" },
         { name = "nvim_lsp" },
-        { name = "minuet" },
+        -- { name = "minuet" },
     },
     performance = {
         fetching_timeout = 2000,
