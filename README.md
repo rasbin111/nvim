@@ -6,7 +6,6 @@ leader = <spacebar>
 :Exp - file explorer 
 d - create a directory 
 % - create a file 
-
 move a file: 
     - mt -> target directory 
     - mf -> moving file / folder 
@@ -51,3 +50,8 @@ za - toggles the fold at the cursor
 Ctrl + n - select next word
 Ctrl+Down / Ctrl+Up - add cursor on line below/above
 \\A - select all occurrences 
+
+# LSP 
+Ctrl + o - moves backward through jump history
+Ctrl + i - moves forward
+
