@@ -13,6 +13,6 @@ vim.cmd.colorscheme("nordic")
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter.foldexpr()"
 vim.opt.foldlevel = 99
-vim.opt.foldlevelstart = 1 -- top level folds are open
-
+vim.opt.foldlevelstart = 99
 vim.o.guifont = "JetBrainsMono_Nerd_Font:h11" -- font for neovide
+
