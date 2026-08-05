@@ -12,7 +12,7 @@ vim.cmd.colorscheme("nordic")
 
 -- fold setup
 vim.opt.foldmethod = "expr"
-vim.opt.foldexpr = "nvim_treesitter.foldexpr()"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 
