@@ -4,6 +4,8 @@ require("neo-tree").setup({
         statusline = false,
     },
     filesystem = {
+        -- Disables neo-tree from automatically opening when you run `nvim .`
+        hijack_netrw_behavior = "disabled",
         follow_current_file = {
             enabled = true,
         }
