@@ -20,7 +20,7 @@ vim.opt.foldlevelstart = 99
 
 -- NEOVIDE
 
-vim.o.guifont = "JetBrainsMono_Nerd_Font:h10.9" -- font for neovide
+vim.o.guifont = "JetBrainsMono_Nerd_Font:h10" -- font for neovide
 
 -- Zoom features in neovide
 -- Initialize scale factor if not already set
