@@ -5,6 +5,13 @@ Plug 'aditya-azad/candle-grey'
 Plug 'davidosomething/vim-colors-meh'
 call plug#end()
 
+" Set up the override BEFORE calling the colorscheme
+augroup CustomCommentColor
+    autocmd!
+    " Change the hex code (#808080) and ctermfg (244) to your desired color
+    autocmd ColorScheme * highlight Comment guifg=#909090 ctermfg=244 gui=italic cterm=italic
+augroup END
+
 colorscheme monochrome
 
 " Press F3 to manually format the current file
