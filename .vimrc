@@ -5,7 +5,7 @@ Plug 'aditya-azad/candle-grey'
 Plug 'davidosomething/vim-colors-meh'
 call plug#end()
 
-colorscheme meh
+colorscheme monochrome
 
 " Press F3 to manually format the current file
 noremap <F3> :Autoformat<CR>
