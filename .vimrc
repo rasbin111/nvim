@@ -5,6 +5,8 @@ Plug 'aditya-azad/candle-grey'
 Plug 'davidosomething/vim-colors-meh'
 Plug 'widatama/vim-phoenix'
 Plug 'zenbones-theme/zenbones.nvim'
+Plug 'arcticicestudio/nord-vim'
+
 call plug#end()
 
 " Set up the override BEFORE calling the colorscheme
@@ -17,6 +19,7 @@ augroup END
 
 colorscheme monochrome
 colorscheme zenbones
+colorscheme nord
 
 " Press F3 to manually format the current file
 noremap <F3> :Autoformat<CR>
