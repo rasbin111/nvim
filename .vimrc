@@ -14,7 +14,7 @@ augroup CustomCommentColor
     autocmd!
     " Change the hex code (#808080) and ctermfg (244) to your desired color
     autocmd ColorScheme * highlight Comment guifg=#909090 ctermfg=101  gui=italic cterm=italic
-    autocmd ColorScheme * highlight String guifg=#00ff00 ctermfg=108 gui=NONE cterm=NONE
+    autocmd ColorScheme * highlight String guifg=#00ff00 ctermfg=107 gui=NONE cterm=NONE
 augroup END
 
 colorscheme monochrome
