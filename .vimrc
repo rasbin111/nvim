@@ -3,6 +3,8 @@ Plug 'vim-autoformat/vim-autoformat'
 Plug 'fxn/vim-monochrome'
 Plug 'aditya-azad/candle-grey'
 Plug 'davidosomething/vim-colors-meh'
+Plug 'widatama/vim-phoenix'
+Plug 'zenbones-theme/zenbones.nvim'
 call plug#end()
 
 " Set up the override BEFORE calling the colorscheme
@@ -14,6 +16,7 @@ augroup CustomCommentColor
 augroup END
 
 colorscheme monochrome
+colorscheme zenbones
 
 " Press F3 to manually format the current file
 noremap <F3> :Autoformat<CR>
