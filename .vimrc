@@ -13,7 +13,7 @@ call plug#end()
 augroup CustomCommentColor
     autocmd!
     " Change the hex code (#808080) and ctermfg (244) to your desired color
-    autocmd ColorScheme * highlight Comment guifg=#909090 ctermfg=244 gui=italic cterm=italic
+    autocmd ColorScheme * highlight Comment guifg=#909090 ctermfg=101  gui=italic cterm=italic
     autocmd ColorScheme * highlight String guifg=#00ff00 ctermfg=114 gui=NONE cterm=NONE
 augroup END
 
