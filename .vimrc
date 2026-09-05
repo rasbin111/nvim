@@ -7,6 +7,8 @@ Plug 'widatama/vim-phoenix'
 Plug 'zenbones-theme/zenbones.nvim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'ziglang/zig.vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 
 call plug#end()
 
@@ -44,5 +46,31 @@ set number
 set relativenumber
 set colorcolumn=80
 
+" coc support
+let g:coc_global_extensions = ['coc-clangd']
 
+" coc setup
+" Show coc.nvim status, including extension installation progress
+set statusline^=%{coc#status()}
 
+function! CheckBackspace() abort
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1] =~# '\s'
+endfunction
+
+" Trigger completion with Tab and navigate the completion menu
+inoremap <silent><expr> <TAB>
+            \ coc#pum#visible() ? coc#pum#next(1) :
+            \ CheckBackspace() ? "\<Tab>" :
+            \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Diagnostics and code navigation
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+nmap <leader>rn <Plug>(coc-rename)
