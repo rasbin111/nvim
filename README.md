@@ -3,55 +3,64 @@
 leader = <spacebar>
 
 ## netrw file manager
-:Exp - file explorer 
-d - create a directory 
-% - create a file 
-move a file: 
-    - mt -> target directory 
-    - mf -> moving file / folder 
-    - mm -> execute move 
 
-# lsp 
-gd - go to defintion 
-gD - go to declaration 
-gi - go to implementation 
-gl - diagnostic 
+:Exp - file explorer
+d - create a directory
+% - create a file
+move a file: - mt -> target directory - mf -> moving file / folder - mm -> execute move
 
-# telescope 
-leader ff - find files 
-leader fg - live grep 
-leader fb - find buffers 
+# lsp
+
+gd - go to defintion
+gD - go to declaration
+gi - go to implementation
+gl - diagnostic
+
+# telescope
+
+leader ff - find files
+leader fg - live grep
+leader fb - find buffers
 leader fh - find help
 
+# basics
 
-# basics 
-:w - write 
-:q - quit 
-
+:w - write
+:q - quit
 
 # neo-tree
+
 leader e - toggle neo-tree (file manager)
 
-# terminal 
+# terminal
+
 esc esc (double esc) - exit from terminal mode to normal mode
-leader tt - toggle terminal 
+leader tt - toggle terminal
 leader tf - toggle terminal float
-leader lg - toggle lazy git 
+leader lg - toggle lazy git
 
 # lazygit
+
 leader lg - open lazygit ui
 
-# fold 
+# fold
+
 zR - open all folds
 zM - close all open folds
 za - toggles the fold at the cursor
 
-# multiple word select 
+# multiple word select
+
 Ctrl + n - select next word
 Ctrl+Down / Ctrl+Up - add cursor on line below/above
-\\A - select all occurrences 
+\\A - select all occurrences
 
-# LSP 
+# LSP
+
 Ctrl + o - moves backward through jump history
 Ctrl + i - moves forward
 
+# .vimrc
+
+copy to ~/.vimrc
+It's config for vim
