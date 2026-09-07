@@ -6,7 +6,7 @@ Plug 'davidosomething/vim-colors-meh'
 Plug 'widatama/vim-phoenix'
 Plug 'zenbones-theme/zenbones.nvim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'ziglang/zig.vim'
+" Plug 'ziglang/zig.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 
