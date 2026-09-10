@@ -77,3 +77,9 @@ nmap <leader>rn <Plug>(coc-rename)
 
 " comment
 packadd comment
+
+
+" cursor
+let &t_SI = "\e[6 q" " Insert mode: steady vertical bar
+let &t_SR = "\e[4 q" " Replace mode: steady underline
+let &t_EI = "\e[2 q" " Normal mode (Everything Else): steady block
