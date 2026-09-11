@@ -8,7 +8,8 @@ vim.opt.ignorecase = true --Ignore case in searches
 
 
 -- colorscheme set at nordic.lua
-vim.cmd.colorscheme("nordic")
+-- vim.cmd.colorscheme("nordic")
+vim.cmd.colorscheme("nightfox")
 
 -- fold setup
 vim.opt.foldmethod = "expr"
