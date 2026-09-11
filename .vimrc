@@ -16,8 +16,8 @@ call plug#end()
 augroup CustomCommentColor
     autocmd!
     " Change the hex code (#808080) and ctermfg (244) to your desired color
-    autocmd ColorScheme * highlight Comment guifg=#909090 ctermfg=101  gui=italic cterm=italic
-    autocmd ColorScheme * highlight String guifg=#00ff00 ctermfg=107 gui=NONE cterm=NONE
+    autocmd ColorScheme * highlight Comment guifg=#aaaaaa ctermfg=109  gui=italic cterm=italic
+    autocmd ColorScheme * highlight String guifg=#aaffaa ctermfg=109 gui=NONE cterm=NONE
 augroup END
 
 colorscheme monochrome
@@ -83,3 +83,6 @@ packadd comment
 let &t_SI = "\e[6 q" " Insert mode: steady vertical bar
 let &t_SR = "\e[4 q" " Replace mode: steady underline
 let &t_EI = "\e[2 q" " Normal mode (Everything Else): steady block
+
+" termguicolors so visual mode don't hide selected text
+set termguicolors
