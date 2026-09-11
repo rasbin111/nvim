@@ -86,3 +86,9 @@ let &t_EI = "\e[2 q" " Normal mode (Everything Else): steady block
 
 " termguicolors so visual mode don't hide selected text
 set termguicolors
+
+" lets us use background settings of our terminal
+highlight Normal guibg=NONE ctermbg=NONE
+highlight NonText guibg=NONE ctermbg=NONE
+highlight SignColumn guibg=NONE ctermbg=NONE
+highlight EndOfBuffer guibg=NONE ctermbg=NONE
