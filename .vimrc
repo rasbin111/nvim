@@ -44,7 +44,7 @@ set expandtab
 
 set number
 set relativenumber
-set colorcolumn=80
+" set colorcolumn=80
 
 " coc support
 let g:coc_global_extensions = ['coc-clangd']
