@@ -46,6 +46,9 @@ set number
 set relativenumber
 " set colorcolumn=80
 
+set path+=**
+set wildmenu
+
 " coc support
 let g:coc_global_extensions = ['coc-clangd']
 
