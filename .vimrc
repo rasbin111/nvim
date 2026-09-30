@@ -9,6 +9,9 @@ Plug 'arcticicestudio/nord-vim'
 " Plug 'ziglang/zig.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" FZF core and Vim integration
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -95,3 +98,14 @@ highlight Normal guibg=NONE ctermbg=NONE
 highlight NonText guibg=NONE ctermbg=NONE
 highlight SignColumn guibg=NONE ctermbg=NONE
 highlight EndOfBuffer guibg=NONE ctermbg=NONE
+
+
+" shortcut for fuzzy finder
+" Map Ctrl+P to search for files in the current directory
+nnoremap <C-p> :Files<CR>
+
+" Map Ctrl+B to search through open buffers
+nnoremap <C-b> :Buffers<CR>
+
+" Map Ctrl+G to search text inside files (requires ripgrep installed)
+nnoremap <C-g> :Rg<CR>
