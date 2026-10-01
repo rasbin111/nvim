@@ -6,6 +6,21 @@ vim.opt.shiftwidth = 4
 vim.opt.mouse = "a"       -- Enable mouse support in all modes
 vim.opt.ignorecase = true --Ignore case in searches
 
+local groups = {
+    "Normal", "NormalNC", "NormalFloat", "FloatBorder", "FloatTitle",
+    "SignColumn", "EndOfBuffer", "WinSeparator",
+    "NeoTreeNormal", "NeoTreeNormalNC", "NeoTreeEndOfBuffer",
+    "NeoTreeWinSeparator", "NeoTreeFloatNormal", "NeoTreeFloatBorder",
+    "NeoTreeTitleBar", "NeoTreeStatusLine", "NeoTreeStatusLineNC",
+}
+
+vim.api.nvim_create_autocmd("ColorScheme", {
+    callback = function()
+        for _, g in ipairs(groups) do
+            vim.api.nvim_set_hl(0, g, { bg = "none" })
+        end
+    end,
+})
 
 -- colorscheme set at nordic.lua
 -- vim.cmd.colorscheme("nordic")
